@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube UI Clone | Avinash Kumar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="nav-left">
+    <button id="menu-btn" class="icon-btn" aria-label="Menu">☰</button>
+    <a class="logo" href="#"><span class="logo-icon">▶</span><span class="logo-text">YouTube<sup>Clone</sup></span></a>
+  </div>
+  <form id="search-form" class="search">
+    <input id="search" type="search" placeholder="Search" aria-label="Search videos">
+    <button type="submit" aria-label="Search">🔍</button>
+  </form>
+  <div class="nav-right">
+    <button id="theme-btn" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    <button class="icon-btn hide-sm" aria-label="Create">➕</button>
+    <button class="icon-btn hide-sm" aria-label="Notifications">🔔</button>
+    <div class="avatar me">AK</div>
+  </div>
+</header>
+<div id="overlay" class="overlay"></div>
+<aside id="sidebar" class="sidebar">
+  <nav id="side-nav"></nav>
+  <hr>
+  <p class="side-title">Subscriptions</p>
+  <nav id="subs"></nav>
+</aside>
+<main id="main" class="main">
+  <div id="chips" class="chips"></div>
+  <p id="empty" class="empty hidden">No videos found. Try a different search.</p>
+  <section id="grid" class="grid"></section>
+</main>
+<div id="watch" class="watch hidden">
+  <div class="watch-box">
+    <button id="watch-close" class="icon-btn close" aria-label="Close">✕</button>
+    <div id="player" class="player"></div>
+    <div id="watch-info" class="watch-info"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
